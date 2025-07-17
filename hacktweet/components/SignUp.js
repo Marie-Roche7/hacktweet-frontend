@@ -4,7 +4,7 @@ import styles from '../styles/Home.module.css';
 import { login } from '../reducers/user';
 
 
-function SignUp() {
+function SignUp(props) {
 
     const dispatch = useDispatch();
     // const user = useSelector((state) => state.user.value);
@@ -25,6 +25,7 @@ function SignUp() {
                         setSignUpUsername('');
                         setSignUpPassword('');
                         setSignUpFirstName('');
+                        console.log(data.token)
                     }
                 });
         };
@@ -33,7 +34,7 @@ function SignUp() {
     return (
 
         <div>
-            <img className={styles.possumpng} src="possum-banner.png"></img>
+            <img onClick={() => props.changeStep("main")} className={styles.possumpng} src="possum-banner.png"></img>
             <div className={styles.mimimi}>
                 <h3>Create your Hacka<span className={styles.one}>c</span><span className={styles.two}>r</span><span className={styles.three}>a</span><span className={styles.four}>a</span><span className={styles.five}>a</span><span className={styles.six}>a</span> account</h3>
                 <div className={styles.bibibi}>

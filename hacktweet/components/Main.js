@@ -3,16 +3,23 @@ import { useSelector } from 'react-redux';
 // import { useDispatch } from 'react-redux';
 import styles from '../styles/Home.module.css';
 import SignIn from './SignIn';
+import SignUp from './SignUp';
+import signIn from '../pages/signIn';
+import Link from 'next/link';
 
-function Main() {
-    // // const clickIn = () => {
-    //     if () {
-    // clicked, return (
-    // <Link href=/signin>
+function Main(props) {
 
-    //     )}
-//}
-    //      
+
+    const clickUp = () => {
+        props.changeStep("signUp")
+    }
+
+
+    const clickIn = () => {
+        props.changeStep("signIn")
+    }
+
+
 
     return (
 

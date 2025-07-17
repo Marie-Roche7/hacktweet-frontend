@@ -1,5 +1,5 @@
 import Home from '../components/Home';
-import '../styles/globals.css';
+import SignUp from '../components/SignUp';
 
 function signUp() {
   return <SignUp/>;

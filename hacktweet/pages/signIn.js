@@ -1,5 +1,5 @@
 import Home from '../components/Home';
-import '../styles/globals.css';
+import SignIn from '../components/SignIn';
 
 function signIn() {
   return <SignIn/>;
