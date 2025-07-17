@@ -5,7 +5,8 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js App</title>
+        <link rel="icon" href="possum-banner.ico"></link> 
+        <title>AAAAAAH</title>
       </Head>
       <Component {...pageProps} />
     </>
