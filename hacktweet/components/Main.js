@@ -1,9 +1,18 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { useDispatch } from 'react-redux';
+// import { useDispatch } from 'react-redux';
 import styles from '../styles/Home.module.css';
+import SignIn from './SignIn';
 
 function Main() {
+    // // const clickIn = () => {
+    //     if () {
+    // clicked, return (
+    // <Link href=/signin>
+
+    //     )}
+//}
+    //      
 
     return (
 
@@ -15,10 +24,10 @@ function Main() {
                     <div className={styles.text}>
                         <h4>JOIN HACKA<span className={styles.one}>C</span><span className={styles.two}>R</span><span className={styles.three}>A</span><span className={styles.four}>A</span><span className={styles.five}>A</span><span className={styles.six}>A</span> TODAY <p>*internal screaming intensified*</p></h4>
                     </div>
-                    <div className={`${styles.signup} ${styles.button}`}>Sign Up</div>
+                    <button onClick={() => clickUp()} className={`${styles.signup} ${styles.button}`}>Sign Up</button>
                     <div>
                         <p>Already have an account?</p>
-                        <div className={`${styles.signin} ${styles.button}`}>Sign In</div>
+                        <button onClick={() => clickIn()} className={`${styles.signin} ${styles.button}`}>Sign In</button>
                     </div>
                 </div>
             </div>
