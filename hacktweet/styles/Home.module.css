@@ -51,6 +51,7 @@
 .possumpng {
   max-height: 17vh;
   max-width: 17vw;
+  cursor: pointer;
 }
 
 .mimimi {

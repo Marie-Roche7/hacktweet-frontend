@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import styles from '../styles/Home.module.css';
 import SignIn from './SignIn';
 import SignUp from './SignUp';
-import signIn from '../pages/signIn';
+import signIn from '../pages/tweetPage';
 import Link from 'next/link';
 
 function Main(props) {
@@ -38,7 +38,7 @@ function Main(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
