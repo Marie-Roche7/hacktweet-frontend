@@ -1,54 +1,107 @@
 import styles from '../styles/Tweet.module.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart, faTrash } from '@fortawesome/free-solid-svg-icons';
+
+// const element = <FontAwesomeIcon icon={faHeart} />
+// const element2 = <FontAwesomeIcon icon={faTrash} />
+
 
 function Tweet() {
     return (
         <div className={styles.container}>
             <div className={styles.userSide}>
-                <img/>
+                <div className={styles.hihihi}>
                 <div className={styles.user}>
-                    {/* <Image href='' /> */}
-                    <div>
-                    <span><p>Name @Name</p></span>
+                    <div className={styles.pic}>
+                        <img className={styles.image} src="possum-screaming.png" />
                     </div>
-                    <button>Logout</button>
+                    <div className={styles.blblb}>
+                        <p className={styles.word}> Name</p>
+                        <p className={styles.word}> @Name</p>
+                    </div>
+                </div>
+                <button>Logout</button>
                 </div>
             </div>
             <div className={styles.middle}>
                 <div className={styles.home}>
                     <h2>Home</h2>
-                    <textarea placeholder="let's tweeet"></textarea>
+                    <input className={styles.input} placeholder="let's tweeet"></input>
                     <div className={styles.send}>
-                        <p>/280</p>
-                        <button>Tweet</button>
+                        <p className={styles.mort}>/280</p>
+                        <p className={styles.mort}>Tweet</p>
                     </div>
                 </div>
-                <br></br>
                 <div className={styles.tweetsContainer}>
                     <div className={styles.tweet}>
                         <div className={styles.userInfos}>
-                            <img/>
+                            <img />
                             <span>Name</span>
                             <span>@Name</span>
                             <span>Time</span>
                         </div>
-                        <div className={styles.tweet}>
+                        <div className={styles.text}>
                             <p>text of tweet #aaaaaah</p>
                         </div>
                         <div className={styles.LikeBtn}>
-                            <button>coeur</button>
-                            <button>trash</button>
+                            <FontAwesomeIcon color=" #6a5978" icon={faHeart} />
+                            <FontAwesomeIcon color=" #6a5978" icon={faTrash} />
+                        </div>
+                    </div>
+                    <div className={styles.tweet}>
+                        <div className={styles.userInfos}>
+                            <img />
+                            <span>Name</span>
+                            <span>@Name</span>
+                            <span>Time</span>
+                        </div>
+                        <div className={styles.text}>
+                            <p>text of tweet #aaaaaah</p>
+                        </div>
+                        <div className={styles.LikeBtn}>
+                            <FontAwesomeIcon color=" #6a5978" icon={faHeart} />
+                            <FontAwesomeIcon color=" #6a5978" icon={faTrash} />
+                        </div>
+                    </div>
+                    <div className={styles.tweet}>
+                        <div className={styles.userInfos}>
+                            <img />
+                            <span>Name</span>
+                            <span>@Name</span>
+                            <span>Time</span>
+                        </div>
+                        <div className={styles.text}>
+                            <p>text of tweet #aaaaaah</p>
+                        </div>
+                        <div className={styles.LikeBtn}>
+                            <FontAwesomeIcon color=" #6a5978" icon={faHeart} />
+                            <FontAwesomeIcon color=" #6a5978" icon={faTrash} />
                         </div>
                     </div>
                 </div>
             </div>
             <div className={styles.trends}>
+
                 <h2>Trends!!</h2>
-                <div>
+
+                <div className={styles.hahahaha}>
+                <div className={styles.hihihih}>
                     <p>#hackathon</p>
                     <p>2 Tweets</p>
+                </div>
+                <div className={styles.hihihih}>
+                    <p>#hackathon</p>
+                    <p>2 Tweets</p>
+                </div>
+                <div className={styles.hihihih}>
+                    <p>#hackathon</p>
+                    <p>2 Tweets</p>
+                </div>
+                <div className={styles.hihihih}>
+                    <p>#hackathon</p>
+                    <p>2 Tweets</p>
+                </div>
                 </div>
             </div>
         </div>
