@@ -10,9 +10,9 @@ input {
   text-align: center;
 }
 
-input:focus {
+/* input:focus {
   outline: none;
-}
+} */
 
 button {
   height: 25px;
